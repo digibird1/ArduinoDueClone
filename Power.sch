@@ -1,0 +1,216 @@
+EESchema Schematic File Version 2
+LIBS:myLib
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ATSAM3X8EA-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title "ATSAM3X8EA Arduino Due CompatibleBoard"
+Date "2015-06-27"
+Rev "1"
+Comp "(c) Daniel Pelikan"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MH2029-300Y FB5
+U 1 1 558BD5F9
+P 2500 1850
+F 0 "FB5" H 2500 2000 50  0000 C CNN
+F 1 "MH2029-300Y" H 2500 1750 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2500 1850 60  0001 C CNN
+F 3 "" H 2500 1850 60  0000 C CNN
+	1    2500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 558BD600
+P 3200 2150
+F 0 "#PWR015" H 3200 1900 50  0001 C CNN
+F 1 "GND" H 3200 2000 50  0000 C CNN
+F 2 "" H 3200 2150 60  0000 C CNN
+F 3 "" H 3200 2150 60  0000 C CNN
+	1    3200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C30
+U 1 1 558BD606
+P 3350 2000
+F 0 "C30" H 3375 2100 50  0000 L CNN
+F 1 "10u" H 3375 1900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3388 1850 30  0001 C CNN
+F 3 "" H 3350 2000 60  0000 C CNN
+	1    3350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C29
+U 1 1 558BD60D
+P 3000 2000
+F 0 "C29" H 3025 2100 50  0000 L CNN
+F 1 "100n" H 3025 1900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3038 1850 30  0001 C CNN
+F 3 "" H 3000 2000 60  0000 C CNN
+	1    3000 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 1850
+Wire Wire Line
+	2000 1850 2150 1850
+Wire Wire Line
+	3000 2150 3350 2150
+Connection ~ 3000 1850
+Wire Wire Line
+	2850 1850 3700 1850
+Text HLabel 800  700  0    60   Input ~ 0
+5V
+Text HLabel 800  850  0    60   Output ~ 0
+3.3V
+Wire Wire Line
+	800  700  1050 700 
+Wire Wire Line
+	800  850  1050 850 
+Text Label 950  700  0    60   ~ 0
+5V
+Text Label 900  850  0    60   ~ 0
+3.3V
+Text Label 2000 1850 0    60   ~ 0
+5V
+$Comp
+L LD1117S33TR U2
+U 1 1 558D7CFD
+P 4100 1900
+F 0 "U2" H 4100 2150 40  0000 C CNN
+F 1 "LD1117S33TR" H 4100 2100 40  0000 C CNN
+F 2 "SMD_Packages:SOT-223" H 4100 2000 40  0000 C CNN
+F 3 "" H 4100 1900 60  0000 C CNN
+	1    4100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C31
+U 1 1 558D7D38
+P 4700 2000
+F 0 "C31" H 4725 2100 50  0000 L CNN
+F 1 "10u" H 4725 1900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4738 1850 30  0001 C CNN
+F 3 "" H 4700 2000 60  0000 C CNN
+	1    4700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1850 5150 1850
+Connection ~ 4700 1850
+$Comp
+L GND #PWR016
+U 1 1 558D7FB3
+P 4100 2150
+F 0 "#PWR016" H 4100 1900 50  0001 C CNN
+F 1 "GND" H 4100 2000 50  0000 C CNN
+F 2 "" H 4100 2150 60  0000 C CNN
+F 3 "" H 4100 2150 60  0000 C CNN
+	1    4100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 558D7FD7
+P 4700 2150
+F 0 "#PWR017" H 4700 1900 50  0001 C CNN
+F 1 "GND" H 4700 2000 50  0000 C CNN
+F 2 "" H 4700 2150 60  0000 C CNN
+F 3 "" H 4700 2150 60  0000 C CNN
+	1    4700 2150
+	1    0    0    -1  
+$EndComp
+Text Label 5000 1850 0    60   ~ 0
+3.3V
+$Comp
+L CONN_01X02 P7
+U 1 1 5586A2C3
+P 2250 1150
+F 0 "P7" H 2250 1300 50  0000 C CNN
+F 1 "5V_Power" V 2350 1150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2250 1150 60  0001 C CNN
+F 3 "" H 2250 1150 60  0000 C CNN
+	1    2250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 5586A356
+P 1700 1300
+F 0 "#PWR018" H 1700 1050 50  0001 C CNN
+F 1 "GND" H 1700 1150 50  0000 C CNN
+F 2 "" H 1700 1300 60  0000 C CNN
+F 3 "" H 1700 1300 60  0000 C CNN
+	1    1700 1300
+	1    0    0    -1  
+$EndComp
+Text Label 1650 1000 0    60   ~ 0
+5V
+$Comp
+L PMEG2010AEH D7
+U 1 1 5586AC39
+P 1900 1000
+F 0 "D7" H 1900 1100 50  0000 C CNN
+F 1 "PMEG2010AEH" H 1900 900 50  0000 C CNN
+F 2 "myLib:SOD-323" H 1900 1000 60  0001 C CNN
+F 3 "" H 1900 1000 60  0000 C CNN
+	1    1900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMEG2010AEH D8
+U 1 1 5586ACC1
+P 1900 1300
+F 0 "D8" H 1900 1400 50  0000 C CNN
+F 1 "PMEG2010AEH" H 1900 1200 50  0000 C CNN
+F 2 "myLib:SOD-323" H 1900 1300 60  0001 C CNN
+F 3 "" H 1900 1300 60  0000 C CNN
+	1    1900 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 1100 2050 1000
+Wire Wire Line
+	2050 1200 2050 1300
+Wire Wire Line
+	1750 1300 1700 1300
+Wire Wire Line
+	1750 1000 1650 1000
+$EndSCHEMATC
